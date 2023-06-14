@@ -1,0 +1,64 @@
+    				       										STATIC
+
+*Process of static
+
+1.loading with default values
+2.initialization
+3.execution from top to bottom
+
+*exit(0)-it will terminate the class
+In exit(0)- there must be a value
+exit()-compilation error
+
+
+*to terminate the class file we use exit(0)
+
+*Many classes can be use in class file
+
+
+*In java file der must be 0 or 1 public cls, if der it must be the java file name
+
+*execution depend on which class have main method
+
+*while compiling class having two classes then it will 2 class file are generated
+
+*if we have two non public class then we can assign any name to file
+
+* if any one class  also public then that file name must be public class name
+
+*if both class are public then compile error will be der
+
+*while running a class we need run the main method class
+
+example:class K1
+{
+}
+class L1
+{
+	public static void main(String[] args) 
+	{
+	}
+}
+
+o/p-D:\practice\app3\src>javac -d ../classes K1.java
+
+D:\practice\app3\src>java -cp ../classes K1 ....HERE WE HAVE CLASS HAVING MAIN METHOD [D:\practice\app3\src>java -cp ../classes L1-EXECUTED]
+
+Error: Main method not found in class K1, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+*if  cls A and B  are already executed(loaded) then if we call second time(multiple times) it will not again executed.
+i.e.,if we call multiple times class A and B, if it is already executed it will execute only one time
+
+*when we are referring one class in another class,
+ex: we are  using V class  in W
+V.main(args);
+NOTE:  we have to  send arguments or it should be null while referring another class file otherwise error
+
+
+
+
+
+
+

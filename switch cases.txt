@@ -1,0 +1,97 @@
+			switch cases
+*in switch  case we can use int, string, char data type
+
+*switch is a keyword
+
+*any num of statements can be der in each case and any num of case can be der in switch 
+
+*break is recommended after each case
+
+*default is a keyword
+
+*default can be written anywhere
+it can be written in  starting of case, middle or end
+
+*default can be written inside the switch block
+
+*always default should be use with switch otherwise error
+
+*switch can be used anywhere like SIB, while, for, if loops, IIB 
+
+*switch can be developed within a block or method
+ex:class G9 
+{
+	static
+	{
+	switch(9)
+		{
+		case 1:
+			System.out.println("from case 9");
+		break;
+		}
+	}
+}
+
+above eg compile successfully, running error
+
+* cannot develop outside static 
+eg:class  G8
+{
+		static switch (2)
+		{
+		}
+}-error
+
+*any loop should be inside the block or method
+
+*class  
+{
+	for (; ; )
+		{
+		}
+
+}   ----error
+
+
+
+
+*class  G11
+{
+	
+		System.out.println("Hello World!");
+	
+}   ---error
+
+
+
+*class  G12
+{
+	;  //or ;;;;;;;;;;;;;;;;
+	
+}
+
+--compile successfully, while running error
+
+*class G14 
+{
+	;;;;;;;;;;;int i;    --compile successfully
+
+}
+
+*class G14A
+{
+	;;;;;;;;;;;static int i; --compile successfully
+
+}
+
+*class  G13
+{
+	;;;;;;;;;;;;;;;;;;;int i  ---error
+	
+}
+
+
+*only one default is allowed
+
+*repeating(duplicate) of same case is not allowed
+

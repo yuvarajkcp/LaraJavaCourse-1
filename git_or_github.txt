@@ -1,0 +1,41 @@
+		Git or github
+
+1. Git or Github -version control system
+	we can able to add, remove, modify the content of the existing project.
+
+2.Git keep track of the changes to the files.
+
+3.Git is the distributed version control system
+
+4. Git or Github used for collaborative development of source code in software development.
+
+5. we can achieve faster development.
+
+6.There is a chance of losing the source code.Since all the developers are having a copy.
+
+7. Git is open source, means anybody can able to view and contribute to  the existing project, except private repositories.
+
+8.companies using Git - Google, Microsoft, Netflix, twitter
+
+9. In one sentence "Git is an open source distributed version control system designed to keep track of even the minor changes to the project with high speed with efficiency"
+
+Create an account on github.com -> create a repository
+
+-git-scm/download->download for windows
+-right click in the project folder(lara download) and select git-bash here
+-ctrl+scroll up for increasing the font size
+
+first setup -> configuration your git-software with remote git-hub account
+-----------
+
+git config --global user.name  "anitha-name"
+git config --global user.email anithathapa97@gmail.com
+
+for clearing the cmd- clear
+
+Note: Do not keep any unnecessary files(Movie, Music files) it won't upload
+-git init -> to initialize this folder as a git repository, so that the remote git system can able to interact with your local git repositiory.
+-git add . ->  adding all the files in that folder to the staging area
+-git commit -m "message_goes_here" == commiting the changes to the files which are currenty in the staging area.(-m is the flag(represent message))
+-git remote add origin "your remote repository address goes here" -> making a connection from your local repository to the remote repositorygitgit
+

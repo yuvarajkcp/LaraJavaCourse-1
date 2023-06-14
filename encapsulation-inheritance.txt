@@ -1,0 +1,54 @@
+			ENCAPSULATION
+
+1. Encapsulation in java is a process of wrapping of code and data together into a single unit.
+eg: a capsule which is mixed of several medicines.
+[inside the capsule is data variables and the covering is method, whole capsule will be class]
+
+*we can able to achieve data security through encapsulation.
+*we can achieve data hiding.
+*by using getters and setters we can read-only or write-only.
+*by using getters and setters we can have control over the data.
+
+class
+{
+	data members
+	     +
+	methods(behaviour)
+}
+
+2. getter and setter method must be declared as public.
+
+3.we can create a fully encapsulated class in java by making all the data members of the class private.
+
+4.by providing only a setter or getter method, you can make the class read-only or write-only. In other word, we can skip getter or setter methods.
+
+[*data members are variables that should be outside method
+static variables or non-static variables = data members (data)
+static methods or non-static methods = member function (code)]
+
+5.if data members are private we cannot access outside the class(access within the same class)
+
+*private, public are non-static
+
+*read only-getter methods
+
+*getter and setter cannot be private
+
+6.it provides the control over the data.Suppose we want to set the value of id which should be greater  than 100 only, we can write the logic inside the setter method
+we can write the logic not to store the -ve numbers in the setter methods
+
+7.it is a way to achieve data hiding in java bcoz other class will not be able to access the data through the private data members
+
+8.Encapsulation is one of the fundamental principles of object-oriented programming[OOP] and involves hiding internal data and implementation details of a class and providing access to them through methods. It helps in achieving data abstraction and protects data from unauthorized access
+
+IDE - integrated Development Environment
+
+
+
+
+			INHERITANCE
+
+*Inheritance is a process of acquiring the properties & behaviour of another class
+
+
+

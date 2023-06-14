@@ -1,0 +1,362 @@
+				non-static
+
+(BEGINNING OF OBJECT ORIENTED PROGRAMME)
+
+eg1:class A 
+{
+	int i;  
+	public static void main(String[] args) 
+	{
+		System.out.println(i);
+	}
+}
+
+here i is non static called attribute, field or property
+
+*here we are trying to access non-static member in static, so it is not possible without reference variable
+
+*non-static member cannot be referenced from a static context(main method)  without reference variable
+
+*reference variable are created using object to the particular class
+
+eg2:void test()  //non-static
+	{
+		
+	}
+	public static void main(String[] args) 
+	{ 
+		test();
+		System.out.println("done");
+	}
+
+
+eg3:int i;
+	 static void test() 
+	{
+		System.out.println(i);
+	}
+
+
+eg4:	 void test1() 
+	{
+		System.out.println("from test1");
+	}
+	static void test2()
+	{
+		test1();
+		System.out.println("from test2");
+	}
+
+
+eg5:int i;
+	static 
+	{
+		System.out.println(i);
+	}
+
+
+eg:void test1()
+	{
+		
+	}
+	static
+	{
+		test1();
+	}
+
+
+
+OBJECT CREATION
+
+*An object is a real world entity
+*class is a blue print to create the objects
+*objects will be having attributes & behaviours
+
+eg:Dog is an object. 
+properties or attributes: name, age, color, breed, gender, weight
+
+behaviours:bark(), chasecat(), bite(), chaseVehicle()
+
+*behaviour can be used by method
+
+*properties are also called as data memebers
+
+*behaviours are also called as member functions.
+
+*for one class we can able to create any number of objects.
+
+OBJECT CREATION
+	 
+class_name reference_variable = new class_name();
+
+ G g1 = new G();
+
+*G- class name
+
+*g1 - reference variable can be anything
+
+* = -----> assignment operator[left assignment operator]
+
+*new is keyword and also an operator
+
+*G() - calling G class no argument constructor
+
+*variable name, method name follow the case like variableNUmberOne, methodNumberOne
+
+*variable name should be a valid identifier
+
+*while referring to a class case must be a same(as a standard we will write the class name in camel case like ThisIsTheCamelCase)
+
+*objects are stored inside heap memeory
+
+*non-static members are loading to the memory, while objects are created.
+
+*all the non-static members are loading to the memory while we are creating objects to that particular class.It can be non-variable or can be non-static method or it can be a non-static block.
+
+*by using the reference of G class object we can access the non static variable i.
+
+*this g1 reference is local to main method
+
+*non-static method test is loading to the memory whenever we are creating an object to the H class
+
+*by using H class reference h1 we can access test method which is non-static
+
+*in the static user defined method also we can create the objects
+
+*one object can have any number of reference variable
+eg:O o1 = new O();
+   O o2 = o1;
+
+*same object can be refered by any number of reference variable
+
+*for any one class any number of objects can be created
+
+*objects are  created  during run time
+
+*if we have to create reference variable in non-static then we have to create reference variable using static otherwise we will get error
+because objects are  created  during run time
+
+*each and every static member (static variable and static methods) will be shared by all the objects of that class
+
+*static int i will be not loaded while creating the object to K4 class, bcoz it is already loaded while K4 class is loading. K4 object is just using the already loaded static int i.even the future objects of all K4 class will be using the same copy of static int i.
+
+*int j;(non-static member)this member will be loaded each and every time whenver we creating object of K5 class, different copy of the same j will be loaded to the memory with the default value 0.
+
+*static int i: (static member) this member will loading while class K5 is loading to the memory with default value 0. while creating the object for K5 CLASS THIS MEMBER WILL NOT E LOADING AGAIN BECOZ IT IS ALREADY LOADED while K5 is loading.each and every object of K5 will be sharing the same copy of static int i.
+
+* illegal forward reference applies to non-static also
+
+*one object can be pointed/refered by any no. of references
+
+*changes in one reference refelecting to all the references that are pointing to that object
+
+*A reference can be point to only one object at a time.
+
+*Abandoned objects are not having any reference.If none of the reference are not pointing to an object, that object ia called as abandoned object
+
+*any object which is not having atleast one reference is calles abandoned object
+
+
+
+					CONSTRUCTORS
+
+*Constructor should have name as class name
+
+*no return type and always must be  non-static
+
+*constructor executed automatically when object is created
+
+*every class should have minumum one constructor.if there is no constructor, compiler will provide default constructor while compiling
+
+*In non-static definition block, "this" is available(it is available in constructor block also).
+
+*while creating an object, we should specify available constructor and that constructor get executed automatically.
+
+*constructor cannot be static.
+
+*eg: class F
+	{
+	  void F()
+	 {
+	   System.out.println("F()");-- it is method not construcor
+	  }
+       public static void main(String[] args)
+	{
+	   System.out.println("main begin");
+	   F f1=new f();
+	   System.out.println("main end");
+ }
+
+*default constructor is always no argument constructor
+
+*if already one constructor is present, compiler will not provide default constructor
+
+*constructor can take any number of argument
+
+
+
+
+*what is a constructor?
+	constructor is a special type of method but its not a regular method, internally compiler will be considerating it a method.
+
+*the main difference between a method and constructor must not have a return type
+
+*A class can have any number of constructors.
+
+*by using one constructor we can create any num. of objects
+
+*constructors are mainly used for initializing the objects
+
+*this calling statement should be first statement in the constructors
+
+rules for constructor
+
+1 constructor name must be same as class name.(case-sensitive)
+2.constructors must not have a return value.
+3.constructors must be having a body {}
+4.constructor can have access specifiers or access modifiers
+
+
+some general points
+
+1.constructor can have access  specifiers(modifiers)
+2.constructor can take any number of arguments.
+3.constructor are executed while we are creating the object to a particular class.
+4.while creating the object we need to call the corresponding available constructor only.
+
+
+*for each and every object creation, the available constructor of that class will be executing
+
+*non-static members can be used straight away in the non-static context without a reference variable.
+eg:	int i;
+	int j=20;
+	D()
+	{
+		System.out.println("from D()");
+		i=10;
+	}
+
+*for one object creation that particular constructor executes only one(constructor chaining is different)
+
+*according to the constructor argument datatype, we must supply the value while calling that constructor
+
+*according to the calling, while creating the object, constructor will be executed
+
+*one constructor can be called any no. of times,but we need to create the object for calling the constructor
+
+*for any class super class is object
+
+*in every constructors body the first statement would be super() calling statement.(if the programmer didn't keep super or 'this' calling statement explicitely)
+
+*each and every class is a sub class to object(whether directly or indirectly)
+
+*object class is the super most class in java
+
+*some of the commonly required memebers are inherited to the sub-classes from the object class.
+
+*super calling statement is calling the object class no argument constructor
+
+*in the object class we have one constructor which is no argument constructor, and we don't have any statements inside that constructor
+
+*super statement will be always calling the super class constructor
+
+*super and this statements comes under non-static.
+
+*this calling statement always the current class constructor not the super class constructor
+
+*if we only kept super(), or super with any argument then compiler will not be keeping super()
+
+*in the constructor body only either this or super calliing statement not both
+
+*S(); we cannot call constructor like this
+*constructor can be called using this and by object creation
+
+*recursive constructor invocation not allowed in constructors
+
+*static block executes only once while loading the class
+
+*constructor executes every time while creating the object
+
+* Y y1 = new Y();  -- compile successfully & StackOverflowError
+
+*this() can be used only inside constructors not in  any method or static(SIB) block
+
+
+				IIB BLOCK
+		Instance Initialization Block
+
+*IN ONE CLASS WE CAN CREATE ANY NUMBER OF IIB BLOCK
+
+*IIB block can be developed outside any method and inside the class
+
+*before the execution of the constructors all IIB block is executing from top to bottom only once for one object creation
+
+*IIB blocks are non-static 
+
+*if we are creating IIB blocks inside of any other blocks then that will be not considered as IIB block, it will be just a normal block
+
+
+*Need of IIB blocks:
+
+	if there is any common implementation is there for all the objects then we can keep that in IIB block.
+
+*first IIB then constructor executed
+
+*constructors calling wise executed and IIB is object wise(for one object creation IIB will one time executed)
+
+*when a class have both static & IIB, first static is executed then IIB, one static block is executed only once in a class but IIB block is executed whenever object is created
+
+*while calling a constructor, we can't assign value
+eg: A(int i=10)
+	{
+		System.out.println("A(int)"); - error	
+	}
+
+
+*static E()
+    {
+        System.out.println("E()"); - compile error
+    }
+
+
+*void F()
+  {
+     System.out.println("F()");
+  }
+  public static void main(String[] args) -	main begin
+								main end 
+	
+  {
+      System.out.println("main begin");
+      F f1 = new F();
+      System.out.println("main end");
+  }
+
+*SIB
+*this()
+*IIB
+
+
+
+				OBJECTS COUNT
+
+*static members can be used straight away in static and non-static without reference variable
+
+*all the static members of a class will be shared by each and every object of a class
+
+*by using reference of any object we can accesss any static member
+
+*by using any reference of any object we can able to access or modify the static memory
+
+*only the original static member will be getting modifed, because static members get loaded once not again and again
+
+
+
+			COMMAND LINE ARGUMENT
+
+
+*the length of an empty array is '0'
+
+*empty, null are different
+
+

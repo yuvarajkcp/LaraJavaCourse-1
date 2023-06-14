@@ -1,0 +1,18 @@
+			Packages in java
+
+1. Package in java used to group related classes.
+2. By using packages we can avoid naming conflicts.
+3. By usng packate we can achieve access protection.
+
+4.first package declaration then only import statement
+5. '.' represents current directory
+6. In eclipse we can create multiple package using '.'
+7.without package it will create class file in classes without directory
+
+8.while object creation, with class name we have to mention classpath.
+eg: com.lara.students.StudentsData sd1 = new (file address)com.lara.students.StudentsData();
+when we are using package no need of using file address
+
+9. In package, the class we are accessing it must be public. 
+
+

@@ -1,0 +1,17 @@
+class K 
+{
+	public static void main(String[] args) 
+	{
+		//double literal
+		System.out.println(1.0);
+		System.out.println(3.0);
+		System.out.println(-3.0);
+		System.out.println(3000.909);
+		System.out.println(3000.90911);
+		System.out.println(-3000.909);
+		System.out.println(-5000.0);
+		System.out.println(-5000.1);
+		System.out.println(1334.25);
+		System.out.println(1334567912.2589567);
+	}
+}

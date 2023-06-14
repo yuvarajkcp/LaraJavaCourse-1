@@ -1,0 +1,30 @@
+* in array index always start from Zero,in each block 4 bytes will be there
+* so if we create 10 blocks then 40 bytes will be there continuously
+*int[]arr1=new int[10];   syntax of arrya logical coding
+*array demands 40 bytes cintinously  for above array creation
+*for one block we store 4 bytes 
+
+
+
+
+
+
+1.write a java program to create an integer array with 10 location store 35 in the first location also display the elements?
+
+2.write a java program to create byte array with 5 location accept two numbers from the user and store 1st number in the 2nd position and 2nd number in the 3rd position add both numbers and display the sum
+
+3. define an integer array with 10 blocks. store 25 in the first position and store 45 in the 4th position and display those elements
+
+4. define an integer array with 5 blocks. store 27 in the last location and display the same 
+
+5.Define an integer array with 10 blocks. Store 200 in the last location and store 34 in the last but one location and display both the elements
+
+6. Define an integer array with 11 location store 37 in the middle location and display the same
+
+7. Create an integer array with 14 locations, store 41 in the mid position.store 76 in the mid 3-position.store 65 in the mid+2 position and display all the elements.Also find the sum of all those elements and display the result
+
+8. Initialize a string array hich contains 5 city names. Display only third city by adding prefix "Welcome to" 
+
+9. Create a byte array with 6 blocks.Store any number between -128 to +128 in the mid+1 position. Assign the element by creating an integer array with 7 blocks and store the element in the mid-1 position.Display both the elements.
+
+10. Create an integer an array with 4 blocks store any number between 70 to 110 in the last position. Assign that element by creating a character array with 3 blocks and store the element in first position.Display both elements.

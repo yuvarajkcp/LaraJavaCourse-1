@@ -1,0 +1,42 @@
+                   		Sql
+
+Structured Query Language
+
+Data base understand only sql
+Data base required to store and secure the data
+Different db available:
+1.oracle (from oracle).
+2.mongoth
+3.mysql (from oracle)
+4.IVMDB to UDB(universal data base)
+5.post gre sql
+6. DB2 (from IBM)
+
+Exe – express edition
+It is simple to use and highly recommend for spl
+Oracle-11 is the best edition
+
+Eg:create table empl (emp_id number, first_name varchar2(90), age number);
+
+sql is a case insensitive
+
+create table table name ( col name, varchar2-data type used for storing for string value 
+
+varchar2(90)- varchar size should be mention 
+
+der is no int type or double type 
+
+,  used as a separator
+
+every clumn should have 2  things...name of the column and data type
+
+if value is numeric value then data type is number...it can be int or double
+
+varchar should mention with size
+
+
+
+
+
+
+

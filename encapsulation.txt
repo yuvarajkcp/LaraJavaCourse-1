@@ -1,0 +1,95 @@
+			ENCAPSULATION
+
+1. Encapsulation in java is a process of wrapping of code and data together into a single unit.
+eg: a capsule which is mixed of several medicines.
+[inside the capsule is data variables and the covering is method, whole capsule will be class]
+
+*we can able to achieve data security through encapsulation.
+*we can achieve data hiding.
+*by using getters and setters we can read-only or write-only.
+*by using getters and setters we can have control over the data.
+
+class
+{
+	data members
+	     +
+	methods(behaviour)
+}
+
+2. getter and setter method must be declared as public.
+
+3.we can create a fully encapsulated class in java by making all the data members of the class private.
+
+4.by providing only a setter or getter method, you can make the class read-only or write-only. In other word, we can skip getter or setter methods.
+
+[*data members are variables that should be outside method
+static variables or non-static variables = data members (data)
+static methods or non-static methods = member function (code)]
+
+5.if data members are private we cannot access outside the class(access within the same class)
+
+*private, public are non-static
+
+*read only-getter methods
+
+*getter and setter cannot be private
+
+6.it provides the control over the data.Suppose we want to set the value of id which should be greater  than 100 only, we can write the logic inside the setter method
+we can write the logic not to store the -ve numbers in the setter methods
+
+7.it is a way to achieve data hiding in java bcoz other class will not be able to acces  the data through the private data members
+
+8.Encapsulation is one of the fundamental principles of object-oriented programming[OOP] and involves hiding internal data and implementation details of a class and providing access to them through methods. It helps in achieving data abstraction and protects data from unauthorized access
+
+IDE - integrated Development Environment
+
+
+
+
+			INHERITANCE
+basic process OOPs
+
+1.Encapsulation
+2.INHERITANCE
+3.Abstraction
+4.Polymorphism
+
+*Inheritance is a process of acquiring the properties & behaviour of another class.
+eg: properties: data members, behaviours: method
+
+*by using inheritance e can achieve code reuseability.
+
+*Inheritance is a fundamental concept in object-orientedprogramming (OOP) that allows classes to inherit properties and behaviours from other classes.
+
+*The code we provided demonstrates java inheritance. Class 'B' extends class 'A', which means that 'B' inherits the members of 'A', including the 'i' variable. In the 'main' method of class'B', an object of type 'B' is created ans assigned to the variable.
+
+
+*one class can able to extend another class at a time
+
+*at a time one class can able to extend only one class
+
+*java can support single inheritance, meanig a class can inherit from only one superclass
+
+*'extends' is keyword by which we can access behaviour & properties of another class
+
+*static and non-static variables are inherited to sub-class from the super class
+
+*By using sub class reference only we can access static members of sub class, no need of creating object
+
+*Even by creating object to sub class we access static variables
+
+*Static methods also will be inheriting to sub class
+
+*each and every class will be extending object class either directly or indirectly
+*if class is not extending any other class then that class is direct subclass of object class
+*if the class is already extending another class then that class is the indirect sub-class of object class.
+* whether we keep it or not compiler only keeps the extends for all the classes .
+
+*if we don't keep any expicit super or this calling statement in the constructor body as a first statement, then compiler only keeps the super with no argument calling statement[super();].
+
+*single inheritance
+*multi-level inheritance
+
+*sub-class will call parent class, parent class will call object class
+
+*for every constructor there will be a default super();

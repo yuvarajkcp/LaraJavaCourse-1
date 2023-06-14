@@ -1,0 +1,7 @@
+		composition
+
+Inheritance: In java, classes can inherit properties and mehtods from other classes	
+
+Relationship using inheritance:
+1.Animal & Dog classes:
+	The Dog class inherits from the Animal class, representing an "is-a" relationship. The Dog class has an instance variable called "breed" that represents a specific breed of Dog.	

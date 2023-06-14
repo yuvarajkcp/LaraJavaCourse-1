@@ -1,0 +1,29 @@
+			Access levels
+
+*access specifiers and access modifiers both are same.
+
+1. We can have control over the data, which one should be shared and which one should not be over package structure.
+
+2. The access specifiers in java maintais the accessibility or scope of a field, method, constructors or class
+
+private || default || protected || public
+
+3. default == package == friendly
+
+4. The private members can be access within the class only
+
+5. The scope of private member is within the declared class.
+
+6. private members cannot be accessed outside of the class.
+
+[1.In one java file any number classes can be developed.
+ 2. For all the classes a class file will be generated(after the successful compilation of java(file) eg: A.class, B.class, C.class )]
+
+				 default   private   protected	 public
+same class			  yes	     yes	yes	  yes
+same package sub class	          yes	      no	yes	  yes
+same package non-sub class	  yes	      no	yes	  yes
+different package sub class	  no	      no	yes	  yes
+different package non-sub class   no	      no	no	  yes
+
+    ] 

@@ -1,0 +1,41 @@
+             			
+					Sql
+
+Structured Query Language
+
+*Data base understand only sql
+
+*Data base required to store and secure the data
+
+ Different db available:
+1.oracle (from oracle).
+2.mongoth
+3.mysql (from oracle)
+4.IVMDB to UDB(universal data base)
+5.post gre sql
+6. DB2 (from IBM)
+
+Exe – express edition
+It is simple to use and highly recommend for spl
+Oracle-11 is the best edition
+
+
+oracle 11g - it is server
+Exe is database
+inside server  multiple data bases
+
+downloading software is server software
+one server multiple data base can be created
+while installing server software one data base is created Exe
+
+DBA- data base administrator
+
+sql is a compressed rar file no need of 
+
+local host means current system
+
+SID is the data base
+
+
+
+

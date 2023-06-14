@@ -1,0 +1,6 @@
+			SCANNER CLASS
+
+*it is not available in java.lang, we have to import
+
+*syntax to create scanner class 
+	Scanner sc = new Scanner(System.in);
