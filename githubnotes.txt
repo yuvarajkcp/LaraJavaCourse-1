@@ -1,0 +1,34 @@
+git
+
+user name 'Surendarraj-M'
+pwd: M10muthu@
+git-scm /download
+right click in the project folder and select git-bash here
+crtl + scrollup for increasing the font
+commands
+first setup ->configuring your git-software with remote git-hub account
+-----------
+git config --global user.name "Surendarraj-M"
+git config --global user.email surendarraj1010@gmail.com
+
+Note : Do not keep any unnecessary files(movie,music files) it won't upload.
+
+- git init  ==> to initialize this folder as a git reposiory, so that the remote
+- git system can able to interact with your local git repository.
+
+- git add .  ==> adding all the files in that folder to the staging area.
+- git commit -m "message_goes_here" == commiting the changes to the files which
+are currently in the stageing area. (-m is the flag (represents message))
+- git remote add origin "your remote repository address goes here" == making a 
+connection from your local repository to the remote repository.
+- git branch -M main == there are mainly two branches available by default which are
+1.main
+2.master
+you can able to create any no. of branches you want with any name for a single 
+repository itself.
+- git push -u origin main == sending (update or uploading) the changes to the
+remote repository from the local repository.(-u stands for update)
+
+after this step for the first time you will get an authenticaion dialogue,you
+need to click on sign in with your browser.then automatically changes will be updated
+to your remote repository.

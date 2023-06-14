@@ -1,4 +1,4 @@
-		Git or github
+git git re addgit		Git or github
 
 1. Git or Github -version control system
 	we can able to add, remove, modify the content of the existing project.
@@ -38,4 +38,5 @@ Note: Do not keep any unnecessary files(Movie, Music files) it won't upload
 -git add . ->  adding all the files in that folder to the staging area
 -git commit -m "message_goes_here" == commiting the changes to the files which are currenty in the staging area.(-m is the flag(represent message))
 -git remote add origin "your remote repository address goes here" -> making a connection from your local repository to the remote repositorygitgit
+-git 
 
